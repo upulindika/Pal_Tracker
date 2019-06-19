@@ -33,7 +33,7 @@ public class JdbcTimeEntryRepository implements TimeEntryRepository {
             ps.setLong(1, timeEntry.getProjectId());
             ps.setLong(2, timeEntry.getUserId());
             ps.setDate(3, Date.valueOf(timeEntry.getDate()));
-            ps.setInt(4, timeEntry.getHours());
+            ps.setInt( 4, timeEntry.getHours());
 
 
             return ps;
